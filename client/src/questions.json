@@ -1,0 +1,104 @@
+[
+	{
+		"question": "What type of character do you prefer?",
+		"answers" : [
+			{ "answer"   : "Attack",
+			  "modifiers" : ["Str", "Dex", "Int", "Cha"]
+			}, 
+			{ "answer"   : "Defense",
+			  "modifiers" : ["Con"]
+			}, 
+			{ "answer"   : "Support",
+			  "modifiers" : ["Int", "Wis", "Cha"]
+			}, 
+			{ "answer"   : "Decoy",
+			  "modifiers" : ["Dex", "Cha"]
+			} 
+		]
+	},
+	{
+		"question": "What role would you play in a team?",
+		"answers" : [
+			{ "answer"   : "Leader",
+			  "modifiers" : ["Cha"]
+			}, 
+			{ "answer"   : "Frontline",
+			  "modifiers" : ["Str", "Con"]
+			}, 
+			{ "answer"   : "Backline",
+			  "modifiers" : ["Int", "Wis"]
+			}, 
+			{ "answer"   : "Scout",
+			  "modifiers" : ["Dex", "Wis"]
+			} 
+		]
+	},
+	{
+		"question": "How would you like to fight?",
+		"answers" : [
+			{ "answer"   : "Glass Cannon",
+			  "modifiers" : ["Str", "Dex"]
+			}, 
+			{ "answer"   : "High Defense, Low Damage",
+			  "modifiers" : ["Con"]
+			}, 
+			{ "answer"   : "Stealth",
+			  "modifiers" : ["Dex"]
+			}, 
+			{ "answer"   : "Clever Deception",
+			  "modifiers" : ["Int", "Cha"]
+			}
+		]
+	},
+	{
+		"question": "How would you argue your case?",
+		"answers" : [
+			{ "answer"   : "Show off your strengths and pick on weaknesses",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "You don’t, watch the idea crash and burn, and you clean up",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Debate using reasoning and logic",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Compromise",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	},
+	{
+		"question": "When you know you cannot beat the boss, do you: ",
+		"answers" : [
+			{ "answer"   : "Make a deal with the boss",
+			  "modifiers" : ["Cha"]
+			}, 
+			{ "answer"   : "Sacrifice a character and run",
+			  "modifiers" : ["Str", "Dex"]
+			}, 
+			{ "answer"   : "Continue until the party wipes",
+			  "modifiers" : ["Str", "Con"]
+			}, 
+			{ "answer"   : "Find the boss’s weak point while the others fight",
+			  "modifiers" : ["Int", "Wis"]
+			}
+		]
+	},
+	{
+		"question": " ",
+		"answers" : [
+			{ "answer"   : " ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : " ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : " ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : " ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+]
