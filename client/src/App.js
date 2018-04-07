@@ -4,6 +4,21 @@ import './App.css';
 import questionsList from './questions.json';
 
 class QuestionAnswer extends Component {
+  constructor(props) {
+  super(props);
+
+  this.state = {
+    userSolutions : [{
+      "str" : 0,
+      "dex" : 0,
+      "con" : 0,
+      "int" : 0,
+      "wis" : 0,
+      "cha" : 0
+    }]
+  };
+}
+
   render() {
     return (
       <div className="App">
@@ -17,25 +32,25 @@ class QuestionAnswer extends Component {
                 <div className="col-sm-12">
                   <div className="radio">
                     <label>
-                      <input type="radio" value="option1" />
+                      <input type="radio" name={questions.question} />
                       {questions.answers[0].answer}
                     </label>
                   </div>
                   <div className="radio">
                     <label>
-                      <input type="radio" value="option2" />
+                      <input type="radio" name={questions.question} />
                       {questions.answers[1].answer}
                     </label>
                   </div>
                   <div className="radio">
                     <label>
-                      <input type="radio" value="option3" />
+                      <input type="radio" name={questions.question} />
                       {questions.answers[2].answer}
                     </label>
                   </div>
                   <div className="radio">
                     <label>
-                      <input type="radio" value="option4" />
+                      <input type="radio" name={questions.question} />
                       {questions.answers[3].answer}
                     </label>
                   </div>
