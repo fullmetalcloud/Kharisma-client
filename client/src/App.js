@@ -3,7 +3,7 @@ import qs from 'qs';
 import axios from 'axios';
 import './App.css';
 import questionsList from './questions.json';
-const url = 'http://0.0.0.0:3001';
+const url = 'http://localhost:3001';
 
 function Answer(props) {
   return(
