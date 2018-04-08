@@ -42,6 +42,10 @@ body {
   text-align: left;
 }
 
+.heading {
+  text-align: center;
+}
+
 .question {
   font-family: "Maiden Orange";
 	font-size: 22px;
@@ -51,6 +55,10 @@ body {
   letter-spacing: 3px;
 	line-height: 26.4px;
   text-transform: uppercase;
+}
+
+.space {
+  margin-bottom: 30px;
 }
 
 @keyframes App-logo-spin {

@@ -125,6 +125,11 @@ class Questionnaire extends Component {
   render() {
     return (
       <div className="App">
+        <div className="heading">
+          <h1> DnD - Decide a New Destiny </h1>
+          <h3> Team GERM-Nation </h3>
+        </div>
+        <div className="space"> </div>
         <div className="container">
           <div className="row">
             {questionsList.map((question, j) => {
