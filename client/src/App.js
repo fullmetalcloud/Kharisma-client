@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import qs from 'qs';
+import axios from 'axios';
 import './App.css';
 import questionsList from './questions.json';
+const url = 'http://0.0.0.0:3001';
 
 function Answer(props) {
   return(
@@ -76,13 +79,8 @@ class Questionnaire extends Component {
     super(props);
     this.state = {
       questions: Array(questionsList.length).fill(0),
-      userSolutions : {
-        "Str" : 0,
-        "Dex" : 0,
-        "Con" : 0,
-        "Int" : 0,
-        "Wis" : 0,
-        "Cha" : 0
+      response: {
+        data: Array(5).fill({Name: "Character"})
       }
     };
   }
@@ -97,7 +95,14 @@ class Questionnaire extends Component {
 
   SubmitAnswers() {
     var answers = this.state.questions
-    var list = this.state.userSolutions
+    var list = {
+        "Str" : 0,
+        "Dex" : 0,
+        "Con" : 0,
+        "Int" : 0,
+        "Wis" : 0,
+        "Cha" : 0
+      }
     let value;
     for (let i = 0; i < questionsList.length;i++) {
       value = questionsList[i].answers[answers[i]].modifiers
@@ -105,7 +110,14 @@ class Questionnaire extends Component {
         list[value[v]]++;
       }
     }
-    console.log(list)
+    axios.post(url + "/api", qs.stringify(list))
+      .then(res => {
+        this.setState({
+          response: res
+        })
+      }).catch(err => { 
+      console.log(err)
+    })
   }
 
   render() {
@@ -121,6 +133,16 @@ class Questionnaire extends Component {
           )
         })}
         <button className="btn btn-default" type="submit" onClick={() => this.SubmitAnswers()}>Submit</button>
+        <div>
+          <ul>
+          {this.state.response.data.map((info,i) => {
+              return(
+                <li>{info.Name}</li>
+              );
+            })
+          }
+          </ul>
+        </div>
       </div>
     );
   }
