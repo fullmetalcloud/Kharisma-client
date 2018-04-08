@@ -4,16 +4,16 @@
 		"answers" : [
 			{ "answer"   : "Attack",
 			  "modifiers" : ["Str", "Dex", "Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Defense",
 			  "modifiers" : ["Con"]
-			}, 
+			},
 			{ "answer"   : "Support",
 			  "modifiers" : ["Int", "Wis", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Decoy",
 			  "modifiers" : ["Dex", "Cha"]
-			} 
+			}
 		]
 	},
 	{
@@ -21,16 +21,16 @@
 		"answers" : [
 			{ "answer"   : "Leader",
 			  "modifiers" : ["Cha"]
-			}, 
+			},
 			{ "answer"   : "Frontline",
 			  "modifiers" : ["Str", "Con"]
-			}, 
+			},
 			{ "answer"   : "Backline",
 			  "modifiers" : ["Int", "Wis"]
-			}, 
+			},
 			{ "answer"   : "Scout",
 			  "modifiers" : ["Dex", "Wis"]
-			} 
+			}
 		]
 	},
 	{
@@ -38,13 +38,13 @@
 		"answers" : [
 			{ "answer"   : "Glass Cannon",
 			  "modifiers" : ["Str", "Dex"]
-			}, 
+			},
 			{ "answer"   : "High Defense, Low Damage",
 			  "modifiers" : ["Con"]
-			}, 
+			},
 			{ "answer"   : "Stealth",
 			  "modifiers" : ["Dex"]
-			}, 
+			},
 			{ "answer"   : "Clever Deception",
 			  "modifiers" : ["Int", "Cha"]
 			}
@@ -55,13 +55,13 @@
 		"answers" : [
 			{ "answer"   : "Show off your strengths and pick on weaknesses",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "You don’t, watch the idea crash and burn, and you clean up",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Debate using reasoning and logic",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Compromise",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -72,13 +72,13 @@
 		"answers" : [
 			{ "answer"   : "Make a deal with the boss",
 			  "modifiers" : ["Cha"]
-			}, 
+			},
 			{ "answer"   : "Sacrifice a character and run",
 			  "modifiers" : ["Str", "Dex"]
-			}, 
+			},
 			{ "answer"   : "Continue until the party wipes",
 			  "modifiers" : ["Str", "Con"]
-			}, 
+			},
 			{ "answer"   : "Find the boss’s weak point while the others fight",
 			  "modifiers" : ["Int", "Wis"]
 			}
@@ -89,13 +89,13 @@
 		"answers" : [
 			{ "answer"   : "Alert your teammates first ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Pocket as much as you can, then alert your teammates ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Insist that you find its rightful owner ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Pillage and tell no one ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -106,13 +106,13 @@
 		"answers" : [
 			{ "answer"   : "Intelligence ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Bravery ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "To be feared ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Integrity ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -123,13 +123,13 @@
 		"answers" : [
 			{ "answer"   : "To provide for your family ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "To return with great stories ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "To defeat evil ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "To protect your homeland ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -140,13 +140,13 @@
 		"answers" : [
 			{ "answer"   : "Bow or dagger ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Javelin or spear ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Sword or axe ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Staff ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -157,13 +157,13 @@
 		"answers" : [
 			{ "answer"   : "Yes, as long as they benefit you ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Yes, if they serve some sort of greater good ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Only under extreme circumstances ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "No, never ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -174,13 +174,13 @@
 		"answers" : [
 			{ "answer"   : "Fairly small ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Medium figure and able to blend in to a crowd ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Demonic or otherworldly ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Animalistic ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
@@ -191,31 +191,14 @@
 		"answers" : [
 			{ "answer"   : "Elementals ",
 			  "modifiers" : ["Str", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Animals ",
 			  "modifiers" : ["Int"]
-			}, 
+			},
 			{ "answer"   : "Weapons ",
 			  "modifiers" : ["Int", "Cha"]
-			}, 
+			},
 			{ "answer"   : "Nothing in particular ",
-			  "modifiers" : ["Wis", "Cha"]
-			}
-		]
-	},
-	{
-		"question": " ",
-		"answers" : [
-			{ "answer"   : " ",
-			  "modifiers" : ["Str", "Cha"]
-			}, 
-			{ "answer"   : " ",
-			  "modifiers" : ["Int"]
-			}, 
-			{ "answer"   : " ",
-			  "modifiers" : ["Int", "Cha"]
-			}, 
-			{ "answer"   : " ",
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
