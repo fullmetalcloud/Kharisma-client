@@ -85,6 +85,125 @@
 		]
 	},
 	{
+		"question": "Upon seeing treasure, do you: ",
+		"answers" : [
+			{ "answer"   : "Alert your teammates first ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Pocket as much as you can, then alert your teammates ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Insist that you find its rightful owner ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Pillage and tell no one ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "What do you value most? ",
+		"answers" : [
+			{ "answer"   : "Intelligence ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Bravery ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "To be feared ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Integrity ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "What would be your motivation for leaving home on a grand adventure? ",
+		"answers" : [
+			{ "answer"   : "To provide for your family ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "To return with great stories ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "To defeat evil ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "To protect your homeland ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "What weapon most appeals to you? ",
+		"answers" : [
+			{ "answer"   : "Bow or dagger ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Javelin or spear ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Sword or axe ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Staff ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "Are harmful actions ever justifiable? ",
+		"answers" : [
+			{ "answer"   : "Yes, as long as they benefit you ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Yes, if they serve some sort of greater good ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Only under extreme circumstances ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "No, never ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "What physical persona appeals most to you? ",
+		"answers" : [
+			{ "answer"   : "Fairly small ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Medium figure and able to blend in to a crowd ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Demonic or otherworldly ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Animalistic ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
+		"question": "Which do you feel more attuned to? ",
+		"answers" : [
+			{ "answer"   : "Elementals ",
+			  "modifiers" : ["Str", "Cha"]
+			}, 
+			{ "answer"   : "Animals ",
+			  "modifiers" : ["Int"]
+			}, 
+			{ "answer"   : "Weapons ",
+			  "modifiers" : ["Int", "Cha"]
+			}, 
+			{ "answer"   : "Nothing in particular ",
+			  "modifiers" : ["Wis", "Cha"]
+			}
+		]
+	}
+	{
 		"question": " ",
 		"answers" : [
 			{ "answer"   : " ",
