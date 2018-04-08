@@ -21,9 +21,36 @@
 .App-intro {
   font-size: large;
 }
+body {
+    background: linear-gradient(to right, #4ca2cd, #67B26F);
+}
+
+.col-sm-6 {
+  margin-bottom: 30px;
+}
+
+.col-sm-12 {
+  font-family: "Fanwood Text";
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
 
 .container {
-  margin-top: 10px;
+  text-align: left;
+}
+
+.question {
+  font-family: "Maiden Orange";
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 900;
+  letter-spacing: 3px;
+	line-height: 26.4px;
+  text-transform: uppercase;
 }
 
 @keyframes App-logo-spin {

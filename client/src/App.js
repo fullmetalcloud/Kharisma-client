@@ -21,7 +21,7 @@ class Question extends Component {
   }
   renderQuestion(i) {
     return(
-      <Answer 
+      <Answer
         question={this.props.questions.question}
         answer={this.props.questions.answers[i].answer}
         ansvalue={i}
@@ -32,46 +32,48 @@ class Question extends Component {
 
   render() {
     return (
-      <div className="container"> 
-        <h2>
+    <div className="col-sm-6">
+      <div className="question">
+        <label>
           {this.props.questions.question}
-        </h2>
-        <div className="row">
+        </label>
+      </div>
+      <div className="row">
+        <div className="radio">
           <div className="col-sm-12">
-            <div className="radio"> 
-              {this.renderQuestion(0)}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="radio"> 
-              {this.renderQuestion(1)}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="radio"> 
-              {this.renderQuestion(2)}
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="radio"> 
-              {this.renderQuestion(3)}
-            </div>
+            {this.renderQuestion(0)}
           </div>
         </div>
       </div>
+      <div className="row">
+        <div className="col-sm-12">
+          <div className="radio">
+            {this.renderQuestion(1)}
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-12">
+          <div className="radio">
+            {this.renderQuestion(2)}
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-sm-12">
+          <div className="radio">
+            {this.renderQuestion(3)}
+          </div>
+        </div>
+      </div>
+    </div>
     )
   }
   // this.props.questions.answers.map((answer, i) => {
   //   return (
   //     this.renderQuestion(answer, i)
   //   );
-  // })     
+  // })
 }
 
 class Questionnaire extends Component {
@@ -115,7 +117,7 @@ class Questionnaire extends Component {
         this.setState({
           response: res
         })
-      }).catch(err => { 
+      }).catch(err => {
       console.log(err)
     })
   }
@@ -123,15 +125,19 @@ class Questionnaire extends Component {
   render() {
     return (
       <div className="App">
-        {questionsList.map((question, j) => {
-          return (
-            <Question key={j}
-              questionvalue={this.state.questions}
-              questions={question}
-              questionnumber={j}
-            />
-          )
-        })}
+        <div className="container">
+          <div className="row">
+            {questionsList.map((question, j) => {
+              return (
+                <Question key={j}
+                  questionvalue={this.state.questions}
+                  questions={question}
+                  questionnumber={j}
+                />
+              )
+            })}
+          </div>
+        </div>
         <button className="btn btn-default" type="submit" onClick={() => this.SubmitAnswers()}>Submit</button>
         <div>
           <ul>
