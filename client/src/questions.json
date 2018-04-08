@@ -100,7 +100,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "What do you value most? ",
 		"answers" : [
@@ -117,7 +117,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "What would be your motivation for leaving home on a grand adventure? ",
 		"answers" : [
@@ -134,7 +134,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "What weapon most appeals to you? ",
 		"answers" : [
@@ -151,7 +151,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "Are harmful actions ever justifiable? ",
 		"answers" : [
@@ -168,7 +168,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "What physical persona appeals most to you? ",
 		"answers" : [
@@ -185,7 +185,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": "Which do you feel more attuned to? ",
 		"answers" : [
@@ -202,7 +202,7 @@
 			  "modifiers" : ["Wis", "Cha"]
 			}
 		]
-	}
+	},
 	{
 		"question": " ",
 		"answers" : [

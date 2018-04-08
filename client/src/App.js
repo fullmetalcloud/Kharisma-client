@@ -5,60 +5,63 @@ import questionsList from './questions.json';
 function Answer(props) {
   return(
     <label>
-      <input type="radio" name={props.question} onChange={() => props.onChange} />
+      <input type="radio" name={props.question} value={props.ansvalue} onChange={props.onChange} />
       {props.answer}
     </label>
   );
 }
 
-class QuestionSet extends Component {
+class Question extends Component {
+  handleChange(changeEvent) {
+      let num = this.props.questionnumber
+      this.props.questionvalue[num] = changeEvent.target.value
+  }
   renderQuestion(i) {
     return(
       <Answer 
         question={this.props.questions.question}
         answer={this.props.questions.answers[i].answer}
-        onChange={() => this.props.onChange(i)}
+        ansvalue={i}
+        onChange={(changeEvent) => this.handleChange(changeEvent)}
       />
     )
   }
 
-
   render() {
     return (
-    <div className="container"> 
-      <h2>
-        {this.props.questions.question}
-      </h2>
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="radio"> 
-            {this.renderQuestion(0)}
+      <div className="container"> 
+        <h2>
+          {this.props.questions.question}
+        </h2>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="radio"> 
+              {this.renderQuestion(0)}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="radio"> 
+              {this.renderQuestion(1)}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="radio"> 
+              {this.renderQuestion(2)}
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="radio"> 
+              {this.renderQuestion(3)}
+            </div>
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="radio"> 
-            {this.renderQuestion(1)}
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="radio"> 
-            {this.renderQuestion(2)}
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-12">
-          <div className="radio"> 
-            {this.renderQuestion(3)}
-          </div>
-        </div>
-      </div>
-
-    </div>
     )
   }
   // this.props.questions.answers.map((answer, i) => {
@@ -71,21 +74,20 @@ class QuestionSet extends Component {
 class Questionnaire extends Component {
   constructor(props) {
     super(props);
-    this.onChange = this.ChangeResponse.bind(this);
     this.state = {
-      response: Array(questionsList.length).fill(null),
-      userSolutions : [{
+      questions: Array(questionsList.length).fill(0),
+      userSolutions : {
         "Str" : 0,
         "Dex" : 0,
         "Con" : 0,
         "Int" : 0,
         "Wis" : 0,
         "Cha" : 0
-      }]
+      }
     };
   }
 
-  ChangeResponse(i, j) {
+  onChange(i, j) {
     let newResponse = this.state.response.slice() //copy the array
     newResponse[j] = i //execute the manipulations
     this.setState({
@@ -93,17 +95,23 @@ class Questionnaire extends Component {
     })
   }
 
+  SubmitAnswers() {
+    console.log(this.state.questions)
+  }
+
   render() {
     return (
       <div className="App">
-        {questionsList.map(function(questions, j) {
+        {questionsList.map((question, j) => {
           return (
-            <QuestionSet key={j}
-              questions={questions}
-              onChange={(i) => {this.ChangeResponse(i, j)}}
+            <Question key={j}
+              questionvalue={this.state.questions}
+              questions={question}
+              questionnumber={j}
             />
           )
         })}
+        <button className="btn btn-default" type="submit" onClick={() => this.SubmitAnswers()}>Submit</button>
       </div>
     );
   }
