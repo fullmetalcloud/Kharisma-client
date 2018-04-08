@@ -96,7 +96,16 @@ class Questionnaire extends Component {
   }
 
   SubmitAnswers() {
-    console.log(this.state.questions)
+    var answers = this.state.questions
+    var list = this.state.userSolutions
+    let value;
+    for (let i = 0; i < questionsList.length;i++) {
+      value = questionsList[i].answers[answers[i]].modifiers
+      for (let v in value) {
+        list[value[v]]++;
+      }
+    }
+    console.log(list)
   }
 
   render() {
