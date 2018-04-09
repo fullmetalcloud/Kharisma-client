@@ -3,6 +3,7 @@ import qs from 'qs';
 import axios from 'axios';
 import './App.css';
 import questionsList from './questions.json';
+import {Redirect} from 'react-router-dom';
 const url = 'http://localhost:3001';
 
 function Answer(props) {
@@ -120,6 +121,9 @@ class Questionnaire extends Component {
       }).catch(err => {
       console.log(err)
     })
+    return(
+        <Redirect push to={{ pathname: "/results", state: this.state.response}} />
+    )
   }
 
   render() {
